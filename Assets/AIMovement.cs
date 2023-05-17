@@ -8,7 +8,7 @@ public class AIMovement : MonoBehaviour
 
     void Start()
     {
-        GetComponent<NavMeshAgent>().SetDestination(gameManager.Instance.Player.transform.position);
+        GetComponent<NavMeshAgent>().SetDestination(GameManager.Instance.Player.transform.position);
     }
 
     // Update is called once per frame

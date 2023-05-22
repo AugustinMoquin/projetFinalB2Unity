@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent NextLevel;
 
-    private float timer = 0;
+    private float timer = 1;
 
     public static GameManager Instance;
 

@@ -14,7 +14,7 @@ public class PotionScript : MonoBehaviour
     {
         if (_isPlayerInTrigger && Input.GetKeyDown(KeyCode.E))
         {
-            _player.GetComponent<PlayerHpScript>().UpdateHp(HealAmount);
+            _player.GetComponent<PlayerHpScript>().UpdateHp(-HealAmount);
             HelpText.SetActive(false);
             Destroy(this.gameObject);
         }
@@ -22,21 +22,17 @@ public class PotionScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Sphere")
-        {
+
             _isPlayerInTrigger = true;
             _player = other.gameObject;
             HelpText.SetActive(true);
-        }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.name == "Sphere")
-        {
+
             _isPlayerInTrigger = false;
             HelpText.SetActive(false);
-
-        }
     }
 }

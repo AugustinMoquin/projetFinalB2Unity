@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: baby rat demo
+  m_Controller: {fileID: 9100000, guid: d975665337b3b3d4684cd39a16400c2b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 6485179335719166614, guid: d937ebb7c2f4d1f4c89dee7487689347, type: 3}
+    m_OverrideClip: {fileID: 6485179335719166614, guid: f1bdbd1644befbf499b44cc478710163, type: 3}
+  - m_OriginalClip: {fileID: 1655692385771299703, guid: d937ebb7c2f4d1f4c89dee7487689347, type: 3}
+    m_OverrideClip: {fileID: 1655692385771299703, guid: f1bdbd1644befbf499b44cc478710163, type: 3}
+  - m_OriginalClip: {fileID: 8021325776121294098, guid: d937ebb7c2f4d1f4c89dee7487689347, type: 3}
+    m_OverrideClip: {fileID: 8021325776121294098, guid: f1bdbd1644befbf499b44cc478710163, type: 3}
+  - m_OriginalClip: {fileID: -7145030834497460203, guid: d937ebb7c2f4d1f4c89dee7487689347, type: 3}
+    m_OverrideClip: {fileID: -7145030834497460203, guid: f1bdbd1644befbf499b44cc478710163, type: 3}
+  - m_OriginalClip: {fileID: 8906397857372169535, guid: d937ebb7c2f4d1f4c89dee7487689347, type: 3}
+    m_OverrideClip: {fileID: 8906397857372169535, guid: f1bdbd1644befbf499b44cc478710163, type: 3}

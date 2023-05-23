@@ -5,15 +5,17 @@ using UnityEngine.AI;
 
 public class AIMovement : MonoBehaviour
 {
+    public Transform Player;
+
 
     void Start()
     {
-        GetComponent<NavMeshAgent>().SetDestination(GameManager.Instance.Player.transform.position);
+        GetComponent<NavMeshAgent>().SetDestination(Player.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        GetComponent<NavMeshAgent>().SetDestination(Player.position);
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class swordscript : MonoBehaviour
+public class sword_enemyattack : MonoBehaviour
 {
     public int Healdamage;
 
@@ -15,16 +15,18 @@ public class swordscript : MonoBehaviour
         if (_isPlayerInTrigger)
         {
             _player.GetComponent<HpMonster>().UpdateHp(-Healdamage);
-          
+
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.name == "Hero")
+        {
             _isPlayerInTrigger = true;
             _player = other.gameObject;
             Debug.Log(other.gameObject);
+        }
 
     }
 

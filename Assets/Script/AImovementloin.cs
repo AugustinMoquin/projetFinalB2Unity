@@ -28,7 +28,7 @@ public class AImovementloin : MonoBehaviour
 
         float distance = Vector3.Distance(playerPosition, monsterPosition);
 
-        if (distance <= 2f)
+        if (distance <= 10f)
         {
             Debug.Log("oui");
             GetComponent<NavMeshAgent>().SetDestination(Player.position);

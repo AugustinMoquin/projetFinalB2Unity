@@ -15,7 +15,6 @@ public class Ratsattaque : MonoBehaviour
         {
             if (!Input.GetMouseButton(1))
             {
-                Debug.Log("bouclier");
                 _player.GetComponent<PlayerHpScript>().UpdateHp(-Healdamage);
             }
             Destroy(this.gameObject);
